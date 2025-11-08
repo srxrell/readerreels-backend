@@ -1,4 +1,4 @@
-import pool from '../../db';
+import pool from '../../../db';
 
 export default async (req, res) => {
   const { query: { id } } = req;
@@ -19,4 +19,5 @@ export default async (req, res) => {
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 };
+
 
